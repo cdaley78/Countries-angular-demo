@@ -8,4 +8,4 @@ Utilizes json data from [@mledoze](https://github.com/mledoze/countries)
 
 Tasks
 - [x] Initial upload
-- [] Fix main content padding on zoom
+- [ ] Fix main content padding on zoom
