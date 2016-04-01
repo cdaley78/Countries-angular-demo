@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app="cjd-countries">
+<head>
+  <title>Countries</title>
+  <link href="app.css" rel="stylesheet">
+</head>
+<body>
+  <div ng-controller="CountryController as country">
+    <header>
+      <h1>List of Countries</h1>
+      <label class="filter-country"><input ng-model="searchText.name.common" type="text" placeholder="Filter by country..."></label>
+      <label>Landlocked
+        <select class="filter-landlocked" ng-model="filterItem.landlocked"
+                ng-options="item.value for item in filterOptions.landlocked"></select>
+      </label>
+    </header>
+    <div class="container">
+      <div class="country" ng-class="{'landlocked' : country.landlocked}" ng-repeat="country in countries | filter:searchText | filter:isLandlocked">
+        <country-block></country-block>
+      </div>
+    </div>
+  </div>
+  <script src="lib/angular.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
