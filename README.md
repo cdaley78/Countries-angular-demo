@@ -1,7 +1,7 @@
 #Demo using AngularJS listing countries of the world. 
 **Filterable by name, language, region, and landlocked.**
 
-Try the demo. [Preview on rawgit](https://rawgit.com/cdaley78/countries-angular-demo/master/index.html).
+Try the demo. [Preview](http://cdaley78.github.io/countries-angular-demo/).
 
 Utilizes json data from [@mledoze](https://github.com/mledoze/countries) 
 
